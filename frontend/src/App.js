@@ -7,12 +7,11 @@ import Login from './components/auth/login/index';
 import Register from './components/auth/register/index';
 // import AddNewCase from "./components/AddNewCase/index"
 import CaseSearch from "./components/cases_search";
-
+import Update from './components/case/updateCase'
 
 const App = () => {
   const [path, setPath] = useState("");
   const [token, setToken] = useState("");
-  const [id, setId] = useState("");
   return (
     <>
       <div className="App">
@@ -23,6 +22,7 @@ const App = () => {
 		    <Route exact path="/cases/closed" render={()=><ClosedCases setPath={setPath} />}/>
 		    <Route path="/cases/categeories/:categeory" render={()=><CaseSearch setPath={setPath} />} />
         <Route exact path = "/cases/:id" />
+        <Route exact path="/update" component={Update} setToken={setToken}/>
         {/* <Route exact path="/cases/create" component={AddNewCase} /> */}
 
       </div>

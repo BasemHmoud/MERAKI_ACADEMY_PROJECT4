@@ -21,7 +21,6 @@ export default function Login({ setToken, path }) {
       .then((res) => {
         console.log(res);
         if (res.data.token) {
-
           setLoginMessage("login successful");
           history.push(path);
         } else {
@@ -66,6 +65,7 @@ export default function Login({ setToken, path }) {
       </fieldset>
 
   
+
       <button className="loginButton" onClick={loginFun}>
         LOGIN
       </button>
