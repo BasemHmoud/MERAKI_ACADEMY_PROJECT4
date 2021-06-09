@@ -9,10 +9,10 @@ import Register from './components/auth/register/index';
 import CaseSearch from "./components/cases_search";
 
 
-
 const App = () => {
   const [path, setPath] = useState("");
   const [token, setToken] = useState("");
+  const [id, setId] = useState("");
   return (
     <>
       <div className="App">

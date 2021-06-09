@@ -27,6 +27,9 @@ const Navigation = () => {
       <Link to="/about" className="links">
         About Us
       </Link>
+      <Link to="/about" className="links">
+        About Us
+      </Link>
       <Link to="/volunteers" className="links">
         Our Volunteers
       </Link>
